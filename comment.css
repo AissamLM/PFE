@@ -1,0 +1,39 @@
+#comment{
+    margin-top:3em;
+}
+#comment h2{
+    text-align:center;
+  }
+#comment #commenticons{
+display:flex;
+width:90%;
+margin:auto;
+margin-top:1.5em;
+}
+
+
+#comment #commenticons div{
+    width:30%;
+    margin:auto;
+    margin-top:0;
+    display: flex;
+}
+#comment #commenticons div i{
+    font-size:2.5em;
+    
+    margin-right:0.3em;
+    color:#FF8C00;
+
+}
+@media all and (max-width:740px) {
+   /* for mobile */
+   #comment #commenticons{
+    display:block;
+    width:80%;
+    }
+    #comment #commenticons div{
+        width:100%;
+        display: flex;
+        margin-bottom:1.2em;
+    }
+  }
