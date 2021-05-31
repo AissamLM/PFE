@@ -1,0 +1,81 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: rgb(238, 243, 245);
+ 
+  position: relative;
+}
+
+#bgimg img {
+  width: 100%;
+  margin: auto;
+ 
+}
+
+#bgimg {
+
+  position: relative;
+}
+#bgimg  #top{
+  top: 70%;
+  left: 15%;
+  position: absolute;
+}
+
+#bgimg h1 {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  color: crimson;
+}
+
+#bgimg a {
+  position: absolute;
+  top: 70%;
+  left: 20%;
+ 
+}
+
+.bgcolor {
+  background-color: #07111A;
+}
+
+.color {
+  color: #07111A;
+}
+
+
+/* ******  card.php ****** */
+#card {
+  max-width: 60%;
+  margin: auto;
+  margin-top: 15px;
+}
+
+#show {
+  font-family: cursive;
+  font-size: 1.5em;
+}
+
+@media all and (max-width:1057px) {
+  /* small pc and ipad pro */
+
+  #card {
+    max-width: 95%;
+  }
+}
+
+#btn{
+  width:100%;margin:auto;margin-top:3em;
+  text-align:center;
+}
+#btn #btnorange{
+  background-color: #ff3200;
+  margin-bottom: 1em;
+}
+#btn h{
+  margin-top: 1em;
+}

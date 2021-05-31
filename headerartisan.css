@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+li i{
+    font-size:1.1em;
+    margin-right:0.3em;
+    color:#ff3200;
+}
+nav {
+    background: #15324d;
+    /* background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%); */
+    /* background:  #5c6b67f8; */
+    
+    /* i add this */
+
+
+}
+
+nav:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+nav .logo a {
+    float: left;
+    color: rgb(241, 158, 3);
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 70px;
+    text-decoration: none;
+    padding-left: 60px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 40px;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li {
+    float: left;
+    /* display: inline-block; */
+    /* background: #526a6b; */
+    /* background: #465b5c; */
+    background: #15324d;
+    /* background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%); */
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+
+    line-height: 70px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+}
+
+nav ul li a:hover {
+    color: cyan;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #33ffff,
+        0 0 10px #66ffff;
+    text-decoration: none;
+}
+
+
+nav ul ul li a:hover {
+    box-shadow: none;
+    
+    text-decoration: none;
+}
+
+nav ul ul {
+    z-index: 10;
+    position: absolute;
+    top: 90px;
+    border-top: 3px solid cyan;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+}
+
+nav ul li:hover>ul {
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+  
+}
+
+nav ul ul li {
+    position: relative;
+    margin: 0px;
+    width: 150px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul ul li a {
+    line-height: 50px;
+  
+}
+
+.show,
+.icon,
+input {
+    display: none;
+}
+
+@media all and (max-width:1300px) {
+
+    /* small pc and ipad pro */
+    nav .logo {
+        padding-left: 0px;
+        font-size: 17px;
+
+    }
+
+    nav ul {
+
+        margin-right: 20px;
+
+    }
+
+    nav ul li a {
+
+        font-size: 17px;
+        padding: 8px 10px;
+    }
+
+}
+
+@media all and (max-width:1170px) {
+
+    /* for ipad pro */
+    nav .logo {
+        padding-left: 0px;
+        font-size: 15px;
+       
+
+    }
+
+    nav ul {
+
+        margin-right: 20px;
+
+    }
+
+    nav ul li a {
+
+        font-size: 15.5px;
+        padding: 8px 6px;
+      
+    }
+
+}
+
+@media all and (max-width:1060px) {
+
+    /* for ipad and mobile */
+    nav ul {
+        margin-right: 0px;
+        float: left;
+    }
+
+    nav .logo {
+        padding-left: 30px;
+        width: 100%;
+    }
+
+    .show+a,
+    ul {
+        display: none;
+        font-weight: bold;
+       
+    }
+
+    nav ul li,
+    nav ul ul li {
+        display: block;
+        width: 100%;
+    }
+
+    nav ul li a:hover {
+        box-shadow: none;
+    }
+
+    .show {
+        display: block;
+        color: white;
+        font-size: 18px;
+        padding: 0 20px;
+        line-height: 70px;
+        cursor: pointer;
+    }
+
+    .show:hover {
+        color: cyan;
+    }
+
+    .icon {
+        display: block;
+        color: white;
+        position: absolute;
+        top: 0;
+        right: 40px;
+        line-height: 70px;
+        cursor: pointer;
+        font-size: 25px;
+    }
+
+    nav ul ul {
+        top: 70px;
+        border-top: 0px;
+        float: none;
+        position: static;
+        display: none;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    nav ul ul a {
+        padding-left: 40px;
+    }
+
+    [id^=btn]:checked+ul {
+        display: block;
+    }
+
+    nav ul ul li {
+        border-bottom: 0px;
+    }
+
+    span.cancel:before {
+        content: '\f00d';
+    }
+}
